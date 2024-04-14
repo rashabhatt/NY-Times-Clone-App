@@ -1,0 +1,69 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest/globals": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended",
+    "prettier"
+  ],
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "tsx": true
+    }
+  },
+  "plugins": ["react", "jest", "@typescript-eslint", "prettier"],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "no-unused-vars": "off",
+    "no-undef": 0,
+    "react/react-in-jsx-scope": "off",
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    "react/prop-types": 0,
+    "react/no-unescaped-entities": 0,
+    "prettier/prettier": "off",
+    "linebreak-style": 0,
+    "@typescript-eslint/no-unused-vars": [
+      "off",
+      { "argsIgnorePattern": "^_", "destructuredArrayIgnorePattern": "^_" }
+    ],
+    "@typescript-eslint/camelcase": 0,
+    "@typescript-eslint/no-use-before-define": 0,
+    "@typescript-eslint/ban-ts-comment": 0,
+    "@typescript-eslint/ban-ts-ignore": 0,
+    "@typescript-eslint/explicit-member-accessibility": 0,
+    "@typescript-eslint/member-delimiter-style": 0,
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "camelcase": "off",
+    "no-duplicate-imports": "warn",
+    "no-console": "off",
+    "no-control-regex": 0,
+    "spaced-comment": "error",
+    "prefer-template": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ]
+  }
+}
